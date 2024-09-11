@@ -19,17 +19,17 @@
       class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center"
     >
       <!-- Home screen -->
-      <section
-        class="home min-h-screen text-white flex justify-center items-center hidden"
+      <section id="home-screen"
+        class=" min-h-screen text-white flex justify-center items-center"
       >
         <div class="flex flex-col items-center gap-8">
           <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button class="btn bg-white text black">Play Now</button>
+          <button onclick="paly()" class="btn bg-white text black">Play Now</button>
         </div>
       </section>
-      <!-- Play-ground screen -->
-      <section class="play-ground">
+      <!-- Play-ground start -->
+      <section id="play-ground" class=" hidden">
         <div class="flex flex-col items-center gap-20 pt-20">
           <!-- screen -->
           <div
@@ -88,7 +88,7 @@
             </button>
 
             <button
-              class="btn rounded-full bg-[#894189] border-none text-white px-2"
+              class="btn rounded-full bg-[#360490] border-none text-white px-2"
             >
               Score
               <img src="images/doller.svg" alt="hart" />
@@ -98,8 +98,21 @@
         </div>
       </section>
 
-      <!-- Score screen -->
-      <section class="score"></section>
+      <!-- Play-ground end-->
+
+      <!-- final Score start -->
+      <section class="score flex justify-center items-center min-h-screen hidden">
+        <div class="text-white text-center space-y-6 bg-[#8E5DD6] rounded-lg p-4">
+            <h1 class="text-8xl">
+                <span class="font-extrabold">Score:</span>
+                <span>14</span>
+            </h1>
+            <button class="btn">Play Again</button>
+            <p>practice will make you a Pro</p>
+        </div>
+      </section>
     </main>
+    <script src="script/utility.js"></script>
+    <script src="script/alhapa-clash.js"></script>
   </body>
 </html>
